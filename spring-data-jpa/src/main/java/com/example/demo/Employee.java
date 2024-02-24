@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
+//This represents the java class that we will interact with in order to persist Employee data into a DB
 @Entity
 public class Employee {
 
