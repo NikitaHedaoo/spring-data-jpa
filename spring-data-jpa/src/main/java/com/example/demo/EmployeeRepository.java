@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import java.util.List;
+
 import org.springframework.data.repository.CrudRepository;
 
 //This is the Interface which we will use to perform CRUD operations,
@@ -10,4 +12,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface EmployeeRepository extends CrudRepository<Employee,Long>{
 
+	List<Employee> findEmployeeByLastNameContaining(String str);
 }
